@@ -2,11 +2,7 @@
 
 A training simulator for multicamera live production. Built to help students and educators understand broadcast workflows without access to real studio equipment.
 
-**Status:** Working prototype (macOS)
-
-## Download
-
-**[⬇ Download latest release](https://github.com/kalba-lab/multicam/releases/latest)** — macOS 15.0+ (Apple Silicon + Intel)
+**Status:** Private Beta
 
 ## About
 
@@ -14,10 +10,18 @@ The idea came from my experience as a TV producer and university instructor in m
 
 → [Project page](https://kalba-lab.github.io/multicam/) with video demo and details
 
+## Early Access
+
+We're preparing for public launch. Join the waitlist or request a demo:
+
+- **[Join Waitlist](https://tally.so/r/Gx6jJL)**
+- **[Request Demo](mailto:grig@kalba.dev?subject=MultiCam%20Simulator%20Demo%20Request)** — for educators and investors
+
 ## Tech
 
 - Unity 3D
 - C#
+- macOS (Apple Silicon + Intel)
 
 ## Author
 
@@ -25,5 +29,7 @@ Grigory Skomorovskiy · [Kalba Lab](https://kalba.dev/)
 
 ## License
 
-Proprietary software © 2025 [Kalba Lab](https://kalba.dev)<br>
-Commercial use requires a license agreement.<br>
+Proprietary software © 2025 [Kalba Lab](https://kalba.dev)  
+Commercial use requires a license agreement.
+
+Visual assets © respective owners. Includes content from 3D Warehouse and Unity Asset Store.
