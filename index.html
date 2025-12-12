@@ -68,7 +68,7 @@
       content: '';
       width: 6px;
       height: 6px;
-      background: #4a9f6e;
+      background: #f59e0b;
       border-radius: 50%;
     }
 
@@ -235,38 +235,81 @@
       color: #555;
     }
 
-    /* Download button */
-    .download-section {
+    /* Waitlist Section */
+    .waitlist-section {
       margin-bottom: 56px;
     }
 
-    .download-btn {
+    .waitlist-box {
+      background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%);
+      border-radius: 12px;
+      padding: 32px;
+      color: #fff;
+    }
+
+    .waitlist-box h3 {
+      font-size: 20px;
+      font-weight: 500;
+      margin-bottom: 8px;
+    }
+
+    .waitlist-box p {
+      color: #aaa;
+      font-size: 15px;
+      margin-bottom: 24px;
+    }
+
+    .waitlist-buttons {
+      display: flex;
+      gap: 12px;
+      flex-wrap: wrap;
+    }
+
+    .btn {
       display: inline-flex;
       align-items: center;
       gap: 10px;
       padding: 14px 24px;
-      background: #1a1a1a;
-      color: #fff;
-      text-decoration: none;
       border-radius: 8px;
       font-size: 15px;
       font-weight: 500;
-      transition: background 0.15s ease;
+      text-decoration: none;
+      transition: all 0.15s ease;
+      cursor: pointer;
+      border: none;
     }
 
-    .download-btn:hover {
-      background: #333;
+    .btn-primary {
+      background: #fff;
+      color: #1a1a1a;
     }
 
-    .download-btn svg {
-      width: 20px;
-      height: 20px;
+    .btn-primary:hover {
+      background: #f0f0f0;
+      transform: translateY(-1px);
     }
 
-    .download-note {
-      margin-top: 12px;
+    .btn-secondary {
+      background: transparent;
+      color: #fff;
+      border: 1px solid #555;
+    }
+
+    .btn-secondary:hover {
+      border-color: #888;
+      background: rgba(255,255,255,0.05);
+    }
+
+    .btn svg {
+      width: 18px;
+      height: 18px;
+    }
+
+    .waitlist-note {
+      margin-top: 16px;
       font-size: 13px;
-      color: #888;
+      color: #666;
+      font-family: 'JetBrains Mono', monospace;
     }
 
     /* Roadmap */
@@ -329,6 +372,15 @@
         flex-direction: column;
         gap: 6px;
       }
+
+      .waitlist-buttons {
+        flex-direction: column;
+      }
+
+      .btn {
+        width: 100%;
+        justify-content: center;
+      }
     }
   </style>
 </head>
@@ -339,7 +391,7 @@
       <img src="1.png" alt="MultiCam Simulator" class="logo">
       <div class="header-text">
         <h1>MultiCam Simulator</h1>
-        <span class="status">Prototype · In Development</span>
+        <span class="status">Private Beta</span>
       </div>
     </header>
 
@@ -355,16 +407,28 @@
       </p>
     </div>
 
-    <div class="download-section">
-      <a href="https://github.com/kalba-lab/multicam/releases/latest" class="download-btn">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-          <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
-          <polyline points="7 10 12 15 17 10"/>
-          <line x1="12" y1="15" x2="12" y2="3"/>
-        </svg>
-        Download for macOS
-      </a>
-      <p class="download-note">Requires macOS 15.0 or later (Apple Silicon + Intel)</p>
+    <div class="waitlist-section">
+      <div class="waitlist-box">
+        <h3>Currently in Private Beta</h3>
+        <p>We're preparing for public launch. Join the waitlist to get early access, or request a demo if you're an educator or investor.</p>
+        <div class="waitlist-buttons">
+          <a href="https://tally.so/r/Gx6jJL" target="_blank" class="btn btn-primary">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+              <polyline points="22,6 12,13 2,6"/>
+            </svg>
+            Join Waitlist
+          </a>
+          <a href="mailto:grig@kalba.dev?subject=MultiCam%20Simulator%20Demo%20Request" class="btn btn-secondary">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <circle cx="12" cy="12" r="10"/>
+              <polygon points="10 8 16 12 10 16 10 8"/>
+            </svg>
+            Request Demo Access
+          </a>
+        </div>
+        <p class="waitlist-note">macOS · Apple Silicon + Intel</p>
+      </div>
     </div>
 
     <div class="video-section">
@@ -448,7 +512,7 @@
       <div class="stack">
         <span class="stack-item">Unity 3D</span>
         <span class="stack-item">C#</span>
-        <span class="stack-item">macOS (Apple Silicon)</span>
+        <span class="stack-item">macOS</span>
       </div>
     </section>
 
@@ -457,20 +521,18 @@
       <ul class="roadmap-list">
         <li>Transition effects (dissolve, wipe)</li>
         <li>Individual camera control</li>
-        <li>Additional levels — talk shows, news, sports</li>
-        <li>Performance optimization and cross-platform builds</li>
+        <li>Additional scenarios — talk shows, news, sports</li>
+        <li>Cross-platform builds (Windows, Linux)</li>
+        <li>LMS integration for educational institutions</li>
       </ul>
     </section>
 
     <footer>
       <p>
-        A <a href="https://kalba.dev/">Kalba Lab</a> project · Grigory Skomorovskiy
+        A <a href="https://kalba.dev/">Kalba Lab</a> project · Grig Skomorovski
       </p>
       <p class="footer-note">
-
-       Proprietary software © 2025 Kalba Lab, project by Grigory Skomorovskiy. Commercial use requires a license agreement.<br>
-       
-       Visual assets © respective owners. Includes content from 3D Warehouse and Unity Asset Store.
+        Visual assets © respective owners. Includes content from 3D Warehouse and Unity Asset Store.
       </p>
     </footer>
 
