@@ -238,38 +238,38 @@
     /* Waitlist Section */
     .waitlist-section {
       margin-bottom: 56px;
-    }
-
-    .waitlist-box {
-      background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%);
-      border-radius: 12px;
-      padding: 32px;
-      color: #fff;
+      padding: 32px 0;
+      border-top: 1px solid #e0e0e0;
+      border-bottom: 1px solid #e0e0e0;
     }
 
     .waitlist-box h3 {
-      font-size: 20px;
+      font-size: 15px;
       font-weight: 500;
       margin-bottom: 8px;
+      color: #1a1a1a;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
     }
 
-    .waitlist-box p {
-      color: #aaa;
-      font-size: 15px;
-      margin-bottom: 24px;
+    .waitlist-box > p {
+      color: #666;
+      font-size: 16px;
+      margin-bottom: 20px;
     }
 
     .waitlist-buttons {
       display: flex;
       gap: 12px;
       flex-wrap: wrap;
+      margin-bottom: 12px;
     }
 
     .btn {
       display: inline-flex;
       align-items: center;
       gap: 10px;
-      padding: 14px 24px;
+      padding: 12px 20px;
       border-radius: 8px;
       font-size: 15px;
       font-weight: 500;
@@ -280,35 +280,33 @@
     }
 
     .btn-primary {
-      background: #fff;
-      color: #1a1a1a;
+      background: #1a1a1a;
+      color: #fff;
     }
 
     .btn-primary:hover {
-      background: #f0f0f0;
-      transform: translateY(-1px);
+      background: #333;
     }
 
     .btn-secondary {
       background: transparent;
-      color: #fff;
-      border: 1px solid #555;
+      color: #1a1a1a;
+      border: 1px solid #ddd;
     }
 
     .btn-secondary:hover {
-      border-color: #888;
-      background: rgba(255,255,255,0.05);
+      border-color: #999;
+      background: #f5f5f5;
     }
 
     .btn svg {
-      width: 18px;
-      height: 18px;
+      width: 16px;
+      height: 16px;
     }
 
     .waitlist-note {
-      margin-top: 16px;
       font-size: 13px;
-      color: #666;
+      color: #999;
       font-family: 'JetBrains Mono', monospace;
     }
 
@@ -408,27 +406,17 @@
     </div>
 
     <div class="waitlist-section">
-      <div class="waitlist-box">
-        <h3>Currently in Private Beta</h3>
-        <p>We're preparing for public launch. Join the waitlist to get early access, or request a demo if you're an educator or investor.</p>
-        <div class="waitlist-buttons">
-          <a href="https://tally.so/r/Gx6jJL" target="_blank" class="btn btn-primary">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-              <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
-              <polyline points="22,6 12,13 2,6"/>
-            </svg>
-            Join Waitlist
-          </a>
-          <a href="mailto:grig@kalba.dev?subject=MultiCam%20Simulator%20Demo%20Request" class="btn btn-secondary">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-              <circle cx="12" cy="12" r="10"/>
-              <polygon points="10 8 16 12 10 16 10 8"/>
-            </svg>
-            Request Demo Access
-          </a>
-        </div>
-        <p class="waitlist-note">macOS · Apple Silicon + Intel</p>
+      <h3>Private Beta</h3>
+      <p>Join the waitlist for early access, or request a demo if you're an educator or investor.</p>
+      <div class="waitlist-buttons">
+        <a href="https://tally.so/r/Gx6jJL" target="_blank" class="btn btn-primary">
+          Join Waitlist
+        </a>
+        <a href="mailto:grig@kalba.dev?subject=MultiCam%20Simulator%20Demo%20Request" class="btn btn-secondary">
+          Request Demo
+        </a>
       </div>
+      <p class="waitlist-note">macOS · Apple Silicon + Intel</p>
     </div>
 
     <div class="video-section">
