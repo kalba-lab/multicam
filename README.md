@@ -21,4 +21,9 @@ The idea came from my experience as a TV producer and university instructor in m
 
 ## Author
 
-Grig Skomorovski · [Kalba Lab](https://kalba.dev/)
+Grigory Skomorovskiy · [Kalba Lab](https://kalba.dev/)
+
+## License
+
+Proprietary software © 2025 [Kalba Lab](https://kalba.dev)<br>
+Commercial use requires a license agreement.<br>
