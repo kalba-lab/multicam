@@ -6,7 +6,7 @@ A training simulator for multicamera live production. Built to help students and
 
 ## About
 
-The idea came from my experience as a TV producer and university instructor in media production. This prototype simulates a 10-camera concert setup with a video switcher interface — multiview wall, Preview/Program monitors, and switching logic that matches real broadcast equipment.
+This prototype simulates a 10-camera concert setup with a video switcher interface — multiview wall, Preview/Program monitors, and switching logic that matches real broadcast equipment.
 
 → [Project page](https://kalba-lab.github.io/multicam/) with video demo and details
 
@@ -22,10 +22,6 @@ We're preparing for public launch. Join the waitlist or request a demo:
 - Unity 3D
 - C#
 - macOS (Apple Silicon + Intel)
-
-## Author
-
-Grigory Skomorovskiy · [Kalba Lab](https://kalba.dev/)
 
 ## License
 
